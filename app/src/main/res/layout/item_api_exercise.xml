@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <!-- Exercise Name -->
+    <TextView
+        android:id="@+id/exerciseName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Exercise Name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Muscle Group -->
+    <TextView
+        android:id="@+id/exerciseMuscleGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Muscle Group"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/exerciseName"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Difficulty -->
+    <TextView
+        android:id="@+id/exerciseDifficulty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Difficulty"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/exerciseMuscleGroup"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Add to Workouts Button -->
+    <Button
+        android:id="@+id/addToWorkoutsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add to Workouts"
+        app:layout_constraintTop_toBottomOf="@id/exerciseDifficulty"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

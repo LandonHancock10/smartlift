@@ -1,0 +1,11 @@
+<resources>
+
+    <!-- Customize Spinner Style -->
+    <style name="SpinnerStyle">
+        <item name="android:spinnerMode">dropdown</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+    </style>
+
+</resources>

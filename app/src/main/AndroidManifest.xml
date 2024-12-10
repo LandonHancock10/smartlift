@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Internet Permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -17,15 +20,25 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/app_name">
+            android:label="@string/app_name"
+            android:theme="@style/Theme.SmartLift">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <!-- AddWorkoutActivity -->
-        <activity android:name=".AddWorkoutActivity" />
-    </application>
+        <!-- Add Workout Activity -->
+        <activity
+            android:name=".AddWorkoutActivity"
+            android:exported="true"
+            android:theme="@style/Theme.SmartLift" />
 
+        <!-- API Exercise Activity -->
+        <activity
+            android:name=".ApiExerciseActivity"
+            android:exported="true"
+            android:theme="@style/Theme.SmartLift" />
+
+    </application>
 </manifest>

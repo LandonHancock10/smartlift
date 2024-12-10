@@ -3,46 +3,36 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:padding="16dp">
 
     <EditText
-        android:id="@+id/workoutNameInput"
+        android:id="@+id/editWorkoutNameInput"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Workout Name"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="16dp" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
-        android:id="@+id/workoutDescriptionInput"
+        android:id="@+id/editWorkoutDescriptionInput"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Workout Description"
-        app:layout_constraintTop_toBottomOf="@id/workoutNameInput"
+        app:layout_constraintTop_toBottomOf="@id/editWorkoutNameInput"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="16dp" />
+        android:layout_marginTop="8dp" />
 
     <EditText
-        android:id="@+id/workoutDurationInput"
+        android:id="@+id/editWorkoutDurationInput"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Workout Duration (minutes)"
+        android:hint="Workout Duration (mins)"
         android:inputType="number"
-        app:layout_constraintTop_toBottomOf="@id/workoutDescriptionInput"
+        app:layout_constraintTop_toBottomOf="@id/editWorkoutDescriptionInput"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="16dp" />
-
-    <Button
-        android:id="@+id/saveWorkoutButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Save Workout"
-        app:layout_constraintTop_toBottomOf="@id/workoutDurationInput"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="8dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
